@@ -5,9 +5,9 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04RefType", "04RefType\04RefType.csproj", "{5388D9B7-E5BA-4D46-ADAF-FAC2FFE31E56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01HelloWold", "..\01HelloWorld\01HelloWold\01HelloWold\01HelloWold.csproj", "{DE65FFFD-392B-4230-8600-D4466E4977FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01HelloWold", "01HelloWold\01HelloWold.csproj", "{DE65FFFD-392B-4230-8600-D4466E4977FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02Variables", "..\01HelloWorld\02Variables\02Variables\02Variables.csproj", "{1E440C49-ED86-41D8-9A57-2847CE22188C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02Variables", "02Variables\02Variables.csproj", "{1E440C49-ED86-41D8-9A57-2847CE22188C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
