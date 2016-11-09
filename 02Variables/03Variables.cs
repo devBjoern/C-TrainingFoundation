@@ -27,8 +27,7 @@ namespace _02Variables
 
             FilTyper ft = FilTyper.csv;
             Console.WriteLine("Printing the ft text = " + ft);
-            int ftInt = (int)FilTyper.csv;
-            Console.WriteLine("Printing the ft value = " + ftInt);
+            Console.WriteLine("Printing the ft value = " + (int)ft);
 
             DateTime myTime = DateTime.Now;
             Console.WriteLine("myTime now = " + myTime.ToString("ddMMyy"));
