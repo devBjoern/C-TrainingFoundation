@@ -18,14 +18,19 @@ namespace _06IntroOOP
             Person son;
             son = new Person("magnus", "bjoern", 2008);
 
+            Person mor;
+            mor = new Person("Sarah", "bjoern", 1981, "kvinde");
+
 
             Console.WriteLine("Udskriver Far og Søn:");
-            Console.WriteLine("Far navn: "+far.FuldtNavn());
-            Console.WriteLine("Far alder: "+far.Alder());
-            Console.WriteLine("Søn navn: "+son.FuldtNavn());
-            Console.WriteLine("Søn alder: "+son.Alder());
-
-
+            Console.WriteLine("Far navn: "+far.getFuldtNavn());
+            Console.WriteLine("Far alder: "+far.getAlder());
+            Console.WriteLine("Søn navn: "+son.getFuldtNavn());
+            Console.WriteLine("Søn alder: "+son.getAlder());
+            Console.WriteLine("Søn køn: " +son.getGender());
+            Console.WriteLine("Mor navn: " + mor.getFuldtNavn());
+            Console.WriteLine("Mor alder: " + mor.getAlder());
+            Console.WriteLine("Mor køn: " + mor.getGender());
 
         }
     }
@@ -35,17 +40,28 @@ namespace _06IntroOOP
         public string fornavn;
         public string efternavn;
         public int foedselsAar;
+        private string gender;
 
-        public string FuldtNavn()
+        public string getFuldtNavn()
         {
             return $"{this.fornavn} {this.efternavn}";
         }
 
-        public int Alder()
+        public int getAlder()
         {
             int alder;
             alder = DateTime.Today.Year - this.foedselsAar;
             return alder;
+        }
+
+        public string getGender()
+        {
+            if(this.gender=="mand")
+            return $"{this.gender}";
+            else
+            {
+                return "Ja";
+            }
         }
 
         public Person()
@@ -54,11 +70,12 @@ namespace _06IntroOOP
             this.efternavn = "";
         }
 
-        public Person(string fornavn, string efternavn, int foedselsAar)
+        public Person(string fornavn, string efternavn, int foedselsAar, string gender="mand")
         {
             this.fornavn = fornavn.ToUpper();
             this.efternavn = efternavn.ToUpper();
             this.foedselsAar = foedselsAar;
+            this.gender = gender;
         }
     }
 }
