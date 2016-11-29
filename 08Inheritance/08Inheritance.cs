@@ -11,7 +11,7 @@ namespace _08Inheritance
         static void Main(string[] args)
         {
             Console.WriteLine("Skriv persons fornavn:");
-            string fornavnP = Console.eRadLine();
+            string fornavnP = Console.ReadLine();
             Console.WriteLine("Skriv persons Efternavn:");
             string efternavnP = Console.ReadLine();
             Person person = new Person(fornavnP,efternavnP);
@@ -32,6 +32,7 @@ namespace _08Inheritance
             Console.WriteLine("Elev navn: " + elev.Fuldtnavn());
             Console.WriteLine("Instruktør navn: " + instruktør.Fuldtnavn());
 
+            
 
         }
         class Person
