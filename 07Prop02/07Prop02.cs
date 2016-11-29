@@ -19,10 +19,12 @@ namespace _07Prop02
             trader.Fornavn = "Poul";
             trader.Efternavn = "Ib";
 
-            //Console.WriteLine(accountant.Fuldtnavn());
-            //Console.WriteLine(trader.Fuldtnavn());
-            Console.WriteLine(accountant.FuldtNavn);
-            Console.WriteLine(trader.FuldtNavn);
+            Console.WriteLine(accountant.Fuldtnavn());
+            Console.WriteLine(trader.Fuldtnavn());
+
+            //For property call
+            //Console.WriteLine(accountant.FuldtNavn);
+            //Console.WriteLine(trader.FuldtNavn);
 
         }
     }
@@ -49,19 +51,20 @@ namespace _07Prop02
             }
         }
 
-        //public string Fuldtnavn()
+        public string Fuldtnavn()
+        {
+            return Fornavn + " " + Efternavn;
+        }
+
+        //Method as property
+        //private string fuldtNavn;
+
+        //public string FuldtNavn
         //{
-        //    return Fornavn + " " + Efternavn;
+        //    get {
+        //        fuldtNavn = Fornavn + " " + Efternavn;
+        //        return fuldtNavn; }
         //}
 
-        private string fuldtNavn;
-
-        public string FuldtNavn
-        {
-            get {
-                fuldtNavn = Fornavn + " " + Efternavn;
-                return fuldtNavn; }
-        }
-   
     }
 }
